@@ -130,6 +130,16 @@
   padding: var(--space-6);
 }
 
+.course-sidebar h3 {
+  margin-bottom: var(--space-4);
+}
+
+.course-sidebar p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
 .course-overview {
   margin-bottom: var(--space-12);
 }
