@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Telepresence Lectures. Send us your questions, feedback, or report content errors.">
+  <title>Contact - Telepresence Lectures</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/layout.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/animations.css">
+  <link rel="stylesheet" href="/src/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">Telepresence Lectures</a>
+      
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav__toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+        
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/pages/courses.html" class="nav__link">Courses</a></li>
+          <li class="nav__item"><a href="/pages/about.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="/pages/faq.html" class="nav__link">FAQ</a></li>
+          <li class="nav__item"><a href="/pages/contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main id="main-content">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <span class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Home</a></span>
+        <span class="breadcrumbs__separator">/</span>
+        <span class="breadcrumbs__item">Contact</span>
+      </nav>
+      
+      <h1 class="section__title">Get in Touch</h1>
+      
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h2 class="contact-info__title">Contact Information</h2>
+          
+          <div class="contact-info__item">
+            <div class="contact-info__label">Email</div>
+            <div class="contact-info__value">
+              <a href="mailto:contact@telepresencelectures.edu" class="contact-info__link">
+                contact@telepresencelectures.edu
+              </a>
+            </div>
+          </div>
+          
+          <div class="contact-info__item">
+            <div class="contact-info__label">Location</div>
+            <div class="contact-info__value">Ile-Ife, Nigeria</div>
+          </div>
+          
+          <div class="contact-info__item">
+            <div class="contact-info__label">Response Time</div>
+            <div class="contact-info__value">
+              We aim to respond to all inquiries within 2-3 business days. 
+              For urgent content errors, please indicate priority in the subject line.
+            </div>
+          </div>
+          
+          <div class="contact-info__item">
+            <p class="contact-info__value">
+              Before contacting us, please check our 
+              <a href="/pages/faq.html" class="contact-info__link">FAQ page</a> 
+              for answers to common questions.
+            </p>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h2 class="contact-form__title">Send a Message</h2>
+          
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label">Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="form-input" 
+                required 
+                aria-required="true"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-input" 
+                required 
+                aria-required="true"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject *</label>
+              <select 
+                id="subject" 
+                name="subject" 
+                class="form-select" 
+                required 
+                aria-required="true"
+              >
+                <option value="">Select a subject</option>
+                <option value="content-error">Report Content Error</option>
+                <option value="technical-issue">Technical Issue</option>
+                <option value="course-request">Course Request</option>
+                <option value="general-question">General Question</option>
+                <option value="educator-inquiry">Educator Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-textarea" 
+                required 
+                aria-required="true"
+                rows="6"
+              ></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn--primary btn--lg btn--full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h3 class="footer__section-title">Telepresence Lectures</h3>
+          <p class="footer__text">
+            Free university-level academic content for physics, mathematics, and computer science. 
+            Built with students and educators in mind.
+          </p>
+        </div>
+        
+        <div class="footer__section">
+          <h3 class="footer__section-title">Quick Links</h3>
+          <ul class="footer__list">
+            <li><a href="/pages/courses.html" class="footer__link">All Courses</a></li>
+            <li><a href="/pages/about.html" class="footer__link">About</a></li>
+            <li><a href="/pages/faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="/pages/contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__section">
+          <h3 class="footer__section-title">Courses</h3>
+          <ul class="footer__list">
+            <li><a href="/pages/phy101.html" class="footer__link">Physics</a></li>
+            <li><a href="/pages/mat101.html" class="footer__link">Mathematics</a></li>
+            <li><a href="/pages/csc150.html" class="footer__link">Computer Science</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>&copy; 2026 Telepresence Lectures. Educational content provided freely for academic use.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
